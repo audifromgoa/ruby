@@ -1,0 +1,6 @@
+sprintf("%20d",123)
+sprintf("%+20d",345)
+sprintf("%020d",345)
+sprintf("%-20d",123)
+sprintf("%-+20d",123)
+sprintf("%- 20d",123)
