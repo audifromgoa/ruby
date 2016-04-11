@@ -1,3 +1,12 @@
+# doctest: Should generate a table that is columnar
+# >> tablatorinatorizer(2)
+# => " 1 2\n 2 4\n"
+# doctest: How does this handle a 0x0 grid?
+# >> tablatorinatorizer(0)
+# => " 0\n"
+# doctest: How does this handle a 0x0 grid?
+# >> tablatorinatorizer(1)
+# => " 1\n"
 def tablatorinatorizer(number)
   item_format = "%#{column_width(number)}i"
   result = ''
@@ -18,20 +27,13 @@ def column_width(number_given)
   (number_given * number_given).to_s.size + 1
 end
 
-puts tablatorinatorizer(10)
 if __FILE__ == $PROGRAM_NAME
-  # We want to be able to produce a "table" of values of numbers.
-  puts "  Time Table  "
-  puts "*...*" * 10
-  padding = 4
-  puts tablatorinatorizer(5)
+  puts "Thank you for using the great and awe inspiring table maker!"
+  puts "Please enter the size of the table you would like to generate."
+  print "We will take a single number: "
+  size = gets.to_i
+  puts "Thank you for  your size input of #{size}.  Is this correct?"
+  gets.chomp
+  puts "Too bad, we are going to use it anyway!"
+  puts tablatorinatorizer(size)
 end
-
-# until first_row[-1] do
-# first_row.each { |a| print a* first_row[0], " " }
-# first_row[+1]
-# p a
-# end
-#
-#
-# puts "\n"
