@@ -2,10 +2,10 @@
 ########
 
 def c_to_f(value)
-   (@value.to_f * 1.8) + 32
+  (@value.to_f * 1.8) + 32
 end
 def f_to_c(value)
-(@value.to_f - 32 ) * 0.55
+  (@value.to_f - 32 ) * 0.55
 end
 
 temperature = gets.chomp
