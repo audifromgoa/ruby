@@ -1,0 +1,6 @@
+require_relative 'test_how_old'
+require_relative 'test_minutes_in_a_year'
+require_relative 'test_convert'
+require_relative 'test_text_formatting'
+require_relative 'test_leap_year'
+require_relative 'test_convert_challenge'
